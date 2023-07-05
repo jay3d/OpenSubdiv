@@ -227,7 +227,11 @@ elseif(MSVC)
 
     list(APPEND OSD_COMPILER_FLAGS
                     /W3     # Use warning level recommended for production purposes.
-                    /WX     # Treat all compiler warnings as errors.
+                    #/WX     # Treat all compiler warnings as errors.
+                    /wd4702
+                    /wd5045
+                    /wd5262
+                    /wd5264
 
                     # warning C4005: macro redefinition
                     /wd4005
