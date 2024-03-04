@@ -539,7 +539,7 @@ if(OPENGLES_FOUND)
     add_definitions(
         -DOPENSUBDIV_HAS_OPENGLES
     )
-    set(OSD_GPU TRUE)
+    #set(OSD_GPU TRUE)
 endif()
 
 if(OPENCL_FOUND)
@@ -577,7 +577,7 @@ if(OPENCL_FOUND)
             )
         endif()
     endif()
-    set(OSD_GPU TRUE)
+    #set(OSD_GPU TRUE)
 else()
     if (NOT NO_OPENCL)
         message(WARNING
